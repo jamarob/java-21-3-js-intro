@@ -1,0 +1,14 @@
+{
+  "name": "js-intro",
+  "version": "1.0.0",
+  "description": "JavaScript intro",
+  "main": "index.html",
+  "scripts": {
+    "start": "vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^2.4.4"
+  }
+}
