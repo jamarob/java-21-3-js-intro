@@ -4,11 +4,13 @@
   "description": "JavaScript intro",
   "main": "index.html",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "prettier": "prettier --write ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "^2.3.2",
     "vite": "^2.4.4"
   }
 }
