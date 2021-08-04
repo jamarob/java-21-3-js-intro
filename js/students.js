@@ -16,3 +16,20 @@ export function renameImmutable(students, oldName, newName) {
     return student
   })
 }
+
+const aStudent = {
+  name: 'Paul',
+  id: 'student#1',
+}
+
+export const students = [
+  aStudent,
+  {
+    name: 'Gwen',
+    id: 'student#2',
+  },
+  {
+    name: 'Lucy',
+    id: 'student#3',
+  },
+]

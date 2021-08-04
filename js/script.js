@@ -1,26 +1,9 @@
 import { add, multiply, factorial } from './math'
-import { renameMutable, renameImmutable } from './students'
+import { students, renameMutable, renameImmutable } from './students'
 
 console.log('2 and 40 is', add(2, 40))
 console.log('3 times 4 is', multiply(3, 4))
 console.log('factorial of 3 is', factorial(3))
-
-const aStudent = {
-  name: 'Paul',
-  id: 'student#1',
-}
-
-const students = [
-  aStudent,
-  {
-    name: 'Gwen',
-    id: 'student#2',
-  },
-  {
-    name: 'Lucy',
-    id: 'student#3',
-  },
-]
 
 console.log('before mutation', JSON.parse(JSON.stringify(students)))
 renameMutable(students, 'Paul', 'Päule')
