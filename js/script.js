@@ -1,6 +1,8 @@
 import { add, multiply, factorial } from './math'
 import { students, renameMutable, renameImmutable } from './students'
 import charactersResponse from './characters-response.json'
+import { fetchAllCharacters } from './rick-and-morty-api-service'
+
 import {
   getCharacterNames,
   getLivingHumans,
@@ -22,8 +24,8 @@ console.log('after immutable', JSON.parse(JSON.stringify(students)))
 console.log('copied students', newStudents)
 */
 
-const characters = charactersResponse.results
-
-console.log(getLivingHumans(characters))
-console.log(getNameAndOrigin(characters))
-console.log(getCharacterNames(characters))
+fetchAllCharacters().then(characters => {
+  console.log(getLivingHumans(characters))
+  console.log(getNameAndOrigin(characters))
+  console.log(getCharacterNames(characters))
+})
