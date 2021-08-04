@@ -1,6 +1,11 @@
 import { add, multiply, factorial } from './math'
 import { students, renameMutable, renameImmutable } from './students'
 import charactersResponse from './characters-response.json'
+import {
+  getCharacterNames,
+  getLivingHumans,
+  getNameAndOrigin,
+} from './rick-and-morty-characters'
 
 /*
 console.log('2 and 40 is', add(2, 40))
@@ -17,4 +22,8 @@ console.log('after immutable', JSON.parse(JSON.stringify(students)))
 console.log('copied students', newStudents)
 */
 
-console.log(charactersResponse)
+const characters = charactersResponse.results
+
+console.log(getLivingHumans(characters))
+console.log(getNameAndOrigin(characters))
+console.log(getCharacterNames(characters))
